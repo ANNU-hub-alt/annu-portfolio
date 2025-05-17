@@ -3,18 +3,17 @@ import { Code } from 'lucide-react';
 
 type Skill = {
   name: string;
-  level: number; // 0-100
   color: string;
 };
 
 const skills: Skill[] = [
-  { name: 'Java', level: 85, color: 'from-red-500 to-orange-500' },
-  { name: 'C', level: 80, color: 'from-blue-500 to-cyan-500' },
-  { name: 'SQL', level: 75, color: 'from-blue-700 to-blue-500' },
-  { name: 'C++', level: 70, color: 'from-blue-600 to-indigo-600' },
-  { name: 'HTML', level: 90, color: 'from-orange-600 to-red-500' },
-  { name: 'CSS', level: 85, color: 'from-blue-500 to-blue-400' },
-  { name: 'JavaScript', level: 80, color: 'from-yellow-400 to-yellow-500' }
+  { name: 'Java', color: 'from-red-500 to-orange-500' },
+  { name: 'C', color: 'from-blue-500 to-cyan-500' },
+  { name: 'SQL', color: 'from-blue-700 to-blue-500' },
+  { name: 'C++', color: 'from-blue-600 to-indigo-600' },
+  { name: 'HTML', color: 'from-orange-600 to-red-500' },
+  { name: 'CSS', color: 'from-blue-500 to-blue-400' },
+  { name: 'JavaScript', color: 'from-yellow-400 to-yellow-500' }
 ];
 
 const Skills = () => {
@@ -30,7 +29,7 @@ const Skills = () => {
         
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Skills bars */}
+            {/* Skills cards */}
             <div className="glass-card p-6 rounded-xl">
               <div className="flex items-center mb-6">
                 <div className="bg-portfolio-purple/20 p-3 rounded-lg mr-4">
@@ -39,19 +38,13 @@ const Skills = () => {
                 <h3 className="text-2xl font-semibold">Technical Skills</h3>
               </div>
               
-              <div className="space-y-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {skills.map((skill, index) => (
-                  <div key={index}>
-                    <div className="flex justify-between mb-1">
-                      <span className="font-medium text-white">{skill.name}</span>
-                      <span className="text-gray-400">{skill.level}%</span>
-                    </div>
-                    <div className="h-2 bg-gray-700/50 rounded-full overflow-hidden">
-                      <div 
-                        className={`h-full bg-gradient-to-r ${skill.color}`} 
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                  <div 
+                    key={index} 
+                    className={`bg-gradient-to-r ${skill.color} p-3 rounded-lg text-center text-white font-medium shadow-md`}
+                  >
+                    {skill.name}
                   </div>
                 ))}
               </div>
@@ -63,11 +56,9 @@ const Skills = () => {
                 <h3 className="text-xl font-semibold mb-4">Development Tools</h3>
                 <div className="flex flex-wrap gap-3">
                   <span className="skill-badge">VS Code</span>
-                  <span className="skill-badge">Eclipse</span>
                   <span className="skill-badge">Git</span>
                   <span className="skill-badge">GitHub</span>
                   <span className="skill-badge">MySQL</span>
-                  <span className="skill-badge">Figma</span>
                 </div>
               </div>
               

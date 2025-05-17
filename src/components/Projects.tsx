@@ -19,20 +19,6 @@ const projects: Project[] = [
     image: "/placeholder.svg",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     category: 'web',
-  },
-  {
-    title: "Student Management System",
-    description: "A Java-based application for managing student records, courses, and grades with a clean user interface.",
-    image: "/placeholder.svg",
-    technologies: ["Java", "SQL", "Swing"],
-    category: 'all',
-  },
-  {
-    title: "Personal Blog",
-    description: "A responsive blog website with modern design and clean typography for sharing technical articles.",
-    image: "/placeholder.svg",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    category: 'web',
   }
 ];
 
