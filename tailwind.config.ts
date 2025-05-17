@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for portfolio
+				portfolio: {
+					purple: '#8B5CF6', // Vibrant purple
+					blue: '#3B82F6', // Bright blue
+					darkBg: '#1A1F2C', // Dark background
+					darkCard: '#252B3B', // Slightly lighter card bg
+					orange: '#F59E0B', // Accent orange
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,41 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'pulse-slow': {
+					'0%, 100%': {
+						opacity: 1
+					},
+					'50%': {
+						opacity: 0.8
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'pulse-slow': 'pulse-slow 3s infinite'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+			},
+			boxShadow: {
+				glow: '0 0 15px rgba(139, 92, 246, 0.5)',
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'dot-pattern': 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%239C92AC\' fill-opacity=\'0.05\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E")',
 			}
 		}
 	},
