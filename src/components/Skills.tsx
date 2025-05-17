@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Code } from 'lucide-react';
 
@@ -56,6 +57,8 @@ const Skills = () => {
                 <h3 className="text-xl font-semibold mb-4">Development Tools</h3>
                 <div className="flex flex-wrap gap-3">
                   <span className="skill-badge">VS Code</span>
+                  <span className="skill-badge">TurboC</span>
+                  <span className="skill-badge">DevC++</span>
                   <span className="skill-badge">Git</span>
                   <span className="skill-badge">GitHub</span>
                   <span className="skill-badge">MySQL</span>

@@ -19,14 +19,6 @@ const Services = () => {
           <div className="absolute -bottom-20 -left-20 w-40 h-40 rounded-full bg-portfolio-blue/20 blur-xl"></div>
           
           <div className="relative z-10">
-            <div className="flex items-center justify-center mb-8">
-              <div className="bg-portfolio-purple/20 p-4 rounded-full">
-                <Code className="text-portfolio-purple" size={32} />
-              </div>
-            </div>
-            
-            <h3 className="text-2xl font-bold text-center mb-6">Web Development</h3>
-            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white/5 p-4 rounded-lg">
                 <h4 className="text-lg font-medium mb-2">Frontend Development</h4>
@@ -58,7 +50,7 @@ const Services = () => {
             </div>
             
             <p className="text-center text-gray-300">
-              I'm committed to delivering high-quality web solutions that meet client requirements and exceed expectations. Let's work together to bring your web project to life!
+              I'm committed to delivering high-quality solutions that meet client requirements and exceed expectations. Let's work together to bring your project to life!
             </p>
           </div>
         </div>
